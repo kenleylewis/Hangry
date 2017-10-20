@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hangry">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Healthy Recipes">
+  <title>Hangry</title>
+
+  <!-- Google Font - Open Sans -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+
+  <!-- Bootstrap CDN 3.3.7 -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Graduate" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Angular CDN 1.5.7 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+
+ <!-- Angular UI Router CDN 0.4.2 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+
+</head>
+
+<body>
+  <!--NAVAGATION BAR-->
+  <div class="customNav">
+    <ul class="customNavItems">
+      <li class="navText"><a ui-sref="home">Home</a></li>
+      <li class="navText"><a ui-sref="profile">Profile</a></li>
+      <li class="navText"><a ui-sref="register">Sign Up</a></li>
+      <li class="navText"><a ui-sref="recipe">Recipes</a></li>
+    </ul>
+  </div>
+
+  <div ui-view></div>
+
+  <!-- Module -->
+  <script type="text/javascript" src="./app.js"></script>
+
+  <!-- Services -->
+  <script type="text/javascript" src="./services/recipeService.js"></script>
+  <script type="text/javascript" src="./services/userService.js"></script>
+  <script type="text/javascript" src="./services/authService.js"></script>
+
+
+  <!-- Controllers -->
+  <script type="text/javascript" src="./controllers/homeController.js"></script>
+  <script type="text/javascript" src="./controllers/userController.js"></script>
+  <script type="text/javascript" src="./controllers/recipeController.js"></script>
+
+</body>
+
+</html>

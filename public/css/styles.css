@@ -1,0 +1,35 @@
+.customNav {
+    height: 50px;
+    background-color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.customNavItems a {
+  font-family: 'Montserrat', sans-serif; 
+  display: inline;
+  color: #635d5d;
+  background-color: white;
+  padding: 0 10px; 
+  font-size: 27px;
+  font-weight: 400; 
+  cursor: pointer;
+}
+
+.navText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.customNavItems a:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+.customNavItems li {
+  display: inline;
+}
+
+.customNavItems {
+  margin-top: 35px;
+}

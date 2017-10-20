@@ -1,0 +1,167 @@
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("../images/home.jpg");
+    opacity: .9;
+
+    /* Set a specific height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    margin: 70px 0px 200px 0px;
+    width: 100%;
+    height: 300px;
+    border: 30px solid rgba(255, 255, 255, 0.69);
+    background-color: rgba(255, 255, 255, 0.81);
+    padding: 25px;
+}
+
+.loginDiv {
+  height: 300px;
+}
+
+.recipeImage {
+    height: 200px;
+    width: 100px;
+    margin: 50px 0px 10px 0px;
+    padding: 10px;
+}
+
+#cookingGif {
+    height: 190px;
+    width: 200px;
+    margin-top: 4px;
+}
+
+.email, .password {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.loginBlock {
+    font-weight: bold;
+    color: #1B1B1B;
+    border: 10px solid rgba(255, 255, 255, 0.69);
+    background-color: rgba(255, 255, 255, 0.81);
+    height: 210px;
+    margin-top: -10px;
+    width: 550px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.input {
+    width: 50%;
+    height: 35px;
+}
+
+p {
+    margin: 4px 0px -12px 0px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #4a4848;
+    border-color: #443c3c;
+    height: 30px;
+    width: 75px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.buttons {
+    margin-left: -530px;
+}
+
+.hangryh2 {
+    text-align: center;
+    font-size: 55px;
+    margin-top: -4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hangryh3 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -3px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hangry {
+    text-align: center;
+    margin-top: -2px;
+    font-size: 20px;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hangryBox {
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    vertical-align: left;
+    height: 200px;
+}
+
+#hat {
+    height: 175px;
+    margin-left: -3px;
+    margin-top: 3px;
+}
+
+#fork {
+    height: 190px;
+    margin-left: -8px;
+}
+
+.header {
+    font-size: 100px;
+    text-align: center;
+    padding-top: 50px;
+    color: rgba(255, 255, 255, 0.84);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hangryHead {
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.loginInput {
+    padding: 10px;
+}
+
+.picRow{
+    margin-left: -220px;
+}
+
+.last {
+    font-size: 60px;
+    margin-top: -6px;
+}
+
+#one {
+    width: 250px;
+    
+}
+
+#two {
+    width: 250px;
+    margin: 0px 0px 0px 80px;
+}
+
+#three {
+    width: 250px;
+    margin: 0px 0px 0px 160px;
+}

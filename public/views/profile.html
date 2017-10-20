@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="./css/profile.css">
+<div class="parallax">
+  <div class="multi-bg-example">
+    <div id="border" class="container">
+      <h1 class="page-header">Hello {{ currentUser.firstName }} What Are We Making Today?</h1>
+      <div class="containerRecipe">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+            <h3 class="personalInfo">Profile</h3>
+            <form class="form-horizontal" role="form">
+              <div class="form-group">
+                <label class="col-lg-3 control-label">First Name:</label>
+                <div class="col-lg-8">
+                  <input class="form-control" ng-model="currentUser.firstName" type="text" placeholder="" class="input-md" required="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Last Name:</label>
+                <div class="col-lg-8">
+                  <input class="form-control" ng-model="currentUser.lastName" type="text" placeholder="" class="input-md" required="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-lg-3 control-label">Password:</label>
+                <div class="col-lg-8">
+                  <input class="form-control" ng-model="currentUser.password" type="password" placeholder="" class="input-md" required="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-3 control-label">DOB:</label>
+                <div class="col-md-8">
+                  <input class="form-control" ng-model="currentUser.dob" type="text" placeholder="" class="input-md" required="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-3 control-label">Email:</label>
+                <div class="col-md-8">
+                  <input class="form-control" ng-model="currentUser.email" type="text" placeholder="" class="input-md" required="">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-md-3 control-label"></label>
+                <div class="col-md-8">
+                  <button ng-click="addUser()" class="btn btn-success btn-lg" style="text-align:center;">Save User</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="recipeBox">
+        <div class="containerBox">
+          <input type="text" class="form-control" placeholder="Search..." ng-model="mySearch">
+          <div class="recipes col-md-4" ng-repeat="recipes in currentUser.recipes | filter: mySearch">
+            <img class="recipeImage" src="{{ recipes.image_url }}" alt="">
+            <h2 class="recipesTitle">{{ recipes.title }}</h2>
+            <div style="text-align:center;">
+              <button class="btn btn-success"><a ng-href="{{ recipes.source_url }}" target="_blank">Hangry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="./css/recipe.css">
+<div class="parallaxRecipe">
+  <form>
+    <fieldset>
+      <legend class="headerRecipe">What Are You Hangry For?</legend>
+      <select class="select" ng-change="getRecipes()" ng-model="cuisine"> 
+      <option value="">Anything</option>
+      <option value="vegan">Vegan</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="dairy%20free">Dairy Free</option>
+      <option value="gluten%20free">Gluten Free</option>
+      <option value="low%20calorie">Low Cal</option>
+      <option value="low%20carb">Low Carb</option>
+    </select>
+    </fieldset>
+  </form>
+  <div class="recipeBox">
+    <div class="container">
+      <input type="text" class="form-control" placeholder="Search..." ng-model="mySearch">
+      <div class="recipes col-md-4" ng-repeat="recipe in recipes | filter: mySearch">
+        <img class="recipeImage" src="{{ recipe.image_url }}" alt="">
+        <h2 class="recipesTitle">{{ recipe.title }}</h2>
+        <div style="text-align:center;">
+          <button ng-model="recipeClick" ng-click="grabRecipe(recipe)" class="btn btn-success">I WANT IT</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
