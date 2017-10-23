@@ -2,11 +2,11 @@ app.service("recipeService", function ($http) {
 
   //recipes
   this.getRecipes = function (resource) {
-    return $http.get(`http://food2fork.com/api/search?key=97680edd7094e6a6cb650bb8cf9cafb9&q=${resource}`)
+    return $http.get(`api &q=${resource}`)
   }
 
     this.getAllRecipes = function () {
-    return $http.get(`http://food2fork.com/api/search?key=97680edd7094e6a6cb650bb8cf9cafb9`)
+    return $http.get(`api`)
   }
 
   this.addRecipeToUser = function(recipe, user) {
